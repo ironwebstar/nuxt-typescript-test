@@ -8,7 +8,8 @@ const createStore = () => {
     },
     actions: {
       setCities(context) {
-        context.state.cities = JSON.parse(localStorage.getItem('cities'))
+        const temp = localStorage.getItem('cities') || ''
+        context.state.cities = JSON.parse(temp)
       }
     },
     modules: {
