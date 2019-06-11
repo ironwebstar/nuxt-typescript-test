@@ -31,7 +31,7 @@ import cities from '@/utils/cityList.js'
 @Component
 export default class SearchBox extends Vue {
   keyword = ''
-  searchResults = []
+  searchResults:string[] = []
   isOpen = false
 
   cityList = cities

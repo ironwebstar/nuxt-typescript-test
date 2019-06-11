@@ -1,7 +1,7 @@
 <template>
   <div id="page-index" class="page page-index">
     <b-btn @click="moreWheels" class="mt-3">
-      more wheels 
+      more wheels
     </b-btn>
   </div>
 </template>
