@@ -40,7 +40,7 @@ export default class SearchBox extends Vue {
     const arr = this.cityList.filter(element => element.name.toLowerCase().includes(this.keyword.toLowerCase()))
     this.searchResults = []
     if (arr.length > 0) {
-      arr.forEach((ele: object) => {
+      arr.forEach((ele: { name: string }) => {
         this.searchResults.push(ele.name)
       })
     }
